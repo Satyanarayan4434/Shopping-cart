@@ -1,7 +1,11 @@
 const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
 
-  return <div>Home</div>;
+  return(
+    <div>
+      
+    </div>
+  );
 };
 
 export default Home;
