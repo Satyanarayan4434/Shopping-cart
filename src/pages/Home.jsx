@@ -22,10 +22,10 @@ const Home = () => {
     fetchData();
   },[])
   return(
-    <div>
+    <div >
       {
-        loading?<Spinner/>: datas.length > 0 ? 
-        (<div>
+        loading?<div className="flex justify-center items-center h-screen" ><Spinner/></div>: datas.length > 0 ? 
+        (<div className="flex flex-wrap w-[1280px] mx-auto gap-9 justify-center my-11">
           {
             datas.map( (data) => (
             <Product key = {data.id} data={data}/>
